@@ -73,8 +73,14 @@ Fonction callback (fonction de rappel)
 -------------------------------*/
 
 function calcul(a, b, callback) {
-    let sum = a + b;
-    calcul(sum);   
+    return callback(a, b);
 }
 
-calcul(12, 12);
+function add(a, b) {
+    return a + b;
+}
+
+const add2 = calcul(5, 4, add);
+const product2 = calcul(5, 4, multiply);
+
+console.log(add2, product2);
