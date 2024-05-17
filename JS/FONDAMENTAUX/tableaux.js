@@ -49,4 +49,5 @@ console.table(numFrutas2);
 const notes = [1, 2, 3, 4, 5];
 // résutat attendu : 1, 2, 3, 4, 5 = 15
 const somme = notes.reduce((acc, current) => acc + current, 0);
-console.log(somme);
+
+console.log(somme); // 15
