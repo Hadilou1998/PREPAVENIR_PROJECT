@@ -1,5 +1,5 @@
 let cours = [];
- 
+     
 // fonction creerCours(nom du cours, niveau du cours) => remplir le tableau "cours" avec ces données sous forme d'un objet
  
 /*
@@ -12,42 +12,34 @@ statut: "non terminé"
 }]
  
 */
-
+ 
 function createCourse(courseName, level, statut) {
     return cours.push({ courseName, level, statut })
 };
-
+ 
 createCourse('JS', 'avancé', 'non terminé');
 console.table(createCourse);
+ 
  
 creerCours = (courseName, courseLevel) => {
     // Création du nouvel objet (nouveau cours)
     let newCourse = {
         name: courseName,
-        level: courseLevel
+        level: courseLevel,
+        statut: "non terminé"
     };
  
     cours.push(newCourse);
 };
  
-creerCours("Python pour débutants", "Débutant");
-creerCours("Les grilles CSS", "Intermédiaire");
-creerCours("HTML : accessibilité", "Avancé");
-creerCours("CSS Flexbox", "Avancé");
+creerCours("Python pour débutants", "débutant");
+creerCours("Les grilles CSS", "intermédaire");
+creerCours("HTML : accessibilité", "avancé");
+creerCours("CSS Flexbox", "avancé");
 console.table(cours);
-
+ 
 // Supprimer un cours
-
-// Afficher tous les cours
-
-// Rechercher un cours par mot clé
-
-// Changer le statut d'un cours à "terminé"
-
-// Compter le nombre de cours terminé
-
-// Suppression
-
+ 
 /**
  * Fonction qui supprime un cours.
  * Il prend en paramètre le nom du "cours" que l'on souhaite supprimer
@@ -69,7 +61,6 @@ function deleteCoursByTagName(name) {
     cours = newCours;
     return cours;
 }
-
  
 // Afficher tous les cours
  
@@ -85,3 +76,49 @@ function afficherCours() {
 };
  
 afficherCours();
+ 
+ 
+// Rechercher un cours par mot clé (eventuellement avec map et filter)
+ 
+function searchCourse(courseName) {
+    // Parcourir le tableau "cours" avec la methode filter./
+    // Sur chacun des objets rencontré, vérifier que la valmauier de laproprité "name" de l'objet correpsonde à la valeurt passé en argument à la focntion.
+ 
+    const searchCourse = cours.filter(c => c.name === courseName);
+    console.table(searchCourse);
+}
+ 
+searchCourse("python");
+console.table(cours);
+ 
+
+// Changer le statut d'un cours à "terminé" (find)
+ 
+/*
+- Parcourir le tableau "cours" avec la méthode find()
+- Sur chacun des objets rencontrés lors du parcours du tableau, vérifier que la valeur de la propriété "name" correponde au nom à la valeur passé en argument à la fonction.
+- selectionner la propriété "statut" de l'objet
+- changer sa valeur sur "terminé"
+- mettre à jour le tableau "cours" avec le nouveau cours désormais "terminé"
+*/
+ 
+function findCourse(courseName) {
+    const foundCourse = cours.find(c => c.name === courseName);
+    foundCourse.statut = "terminé";
+    return foundCourse;
+}
+ 
+console.log(findCourse('Python pour débutants'));
+ 
+console.table(cours);
+ 
+ 
+// Compter le nombre de cours terminé (avec reduce)
+
+function countCompletedCourses() {
+    return cours.reduce((acc, currentValue) =>
+        acc + (currentValue.statut === "terminé" ? 1 : 0)
+        , 0);
+}
+ 
+console.log(countCompletedCourses());
