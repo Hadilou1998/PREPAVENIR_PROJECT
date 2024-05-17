@@ -39,8 +39,14 @@ const frutas = ['🍏', '🍌', '🍒🍏', '🍎🍏', '🥝', '🍐', '🍓'];
 
 const numFrutas = frutas.filter(function (fruit) {
     return fruit.includes('🍏');
-})
+});
 
 const numFrutas2 = frutas.filter(f => f.includes('🍏'));
 
 console.table(numFrutas2);
+
+// Reduce
+const notes = [1, 2, 3, 4, 5];
+// résutat attendu : 1, 2, 3, 4, 5 = 15
+const somme = notes.reduce((acc, current) => acc + current, 0);
+console.log(somme);
