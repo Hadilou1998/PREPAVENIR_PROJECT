@@ -22,3 +22,11 @@ console.table(animals);
 // Retirer le premier élément d'un tableau
 vegetables.shift();
 console.table(vegetables);
+
+// map (méthode immuable = ne modifie pas le tableau sur lequel elle est appliquée)
+const squares = ['🟥', '🟨', '🟩'];
+// résultat attendu : ['🟥🔵', '🟨🔵', '🟩🔵'];
+
+const newSquares = squares.map(m => m + '🔵' );
+console.table(squares);
+console.table(newSquares);
