@@ -34,7 +34,6 @@ creerCours("Python pour débutants", "Débutant");
 creerCours("Les grilles CSS", "Intermédiaire");
 creerCours("HTML : accessibilité", "Avancé");
 creerCours("CSS Flexbox", "Avancé");
-
 console.table(cours);
 
 // Supprimer un cours
@@ -47,7 +46,42 @@ console.table(cours);
 
 // Compter le nombre de cours terminé
 
-supprCours = (courseName) {
-    // Supprimer un cours
-    let 
+// Suppression
+
+/**
+ * Fonction qui supprime un cours.
+ * Il prend en paramètre le nom du "cours" que l'on souhaite supprimer
+ * @param {string} name 
+ * @returns 
+ */
+function deleteCours(name) {
+    const newCours = cours.filter((c) => c.name != name);
+    cours = newCours;
+    return cours;
 }
+ 
+deleteCours("CSS Flexbox");
+console.table(cours);
+ 
+ 
+function deleteCoursByTagName(name) {
+    const newCours = cours.filter((c) => c.name != name || c.statut != name);
+    cours = newCours;
+    return cours;
+}
+
+ 
+// Afficher tous les cours
+ 
+function afficherCours() {
+    cours.forEach(c => {
+        console.log(`
+        Titre du cours: ${c.name}\n 
+        Niveau :${c.level}\n 
+        Statut :${c.statut}\n
+        ---------------------
+        `);
+    })
+};
+ 
+afficherCours();
