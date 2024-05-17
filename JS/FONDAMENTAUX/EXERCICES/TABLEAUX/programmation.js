@@ -12,6 +12,13 @@ statut: "non terminé"
 }]
  
 */
+
+function createCourse(courseName, level, statut) {
+    return cours.push({ courseName, level, statut })
+};
+
+createCourse('JS', 'avancé', 'non terminé');
+console.table(createCourse);
  
 creerCours = (courseName, courseLevel) => {
     // Création du nouvel objet (nouveau cours)
@@ -23,7 +30,24 @@ creerCours = (courseName, courseLevel) => {
     cours.push(newCourse);
 };
  
-creerCours("Cours 1", "Python", "Simple", false);
-creerCours("Cours 2", "CSS", "Base", true);
-creerCours("Cours 3", "HTML", "Global", true);
+creerCours("Python pour débutants", "Débutant");
+creerCours("Les grilles CSS", "Intermédiaire");
+creerCours("HTML : accessibilité", "Avancé");
+creerCours("CSS Flexbox", "Avancé");
+
 console.table(cours);
+
+// Supprimer un cours
+
+// Afficher tous les cours
+
+// Rechercher un cours par mot clé
+
+// Changer le statut d'un cours à "terminé"
+
+// Compter le nombre de cours terminé
+
+supprCours = (courseName) {
+    // Supprimer un cours
+    let 
+}
