@@ -27,6 +27,20 @@ console.table(vegetables);
 const squares = ['🟥', '🟨', '🟩'];
 // résultat attendu : ['🟥🔵', '🟨🔵', '🟩🔵'];
 
+// coup de pouce : includes()
+
 const newSquares = squares.map(m => m + '🔵' );
 console.table(squares);
 console.table(newSquares);
+
+// FILTER (méthode immuable = ne modifie pas le tableau sur lequel elle est appliquée)
+// résultat attendu : ['🍏', '🍒🍏', '🍎🍏'];
+const frutas = ['🍏', '🍌', '🍒🍏', '🍎🍏', '🥝', '🍐', '🍓'];
+
+const numFrutas = frutas.filter(function (fruit) {
+    return fruit.includes('🍏');
+})
+
+const numFrutas2 = frutas.filter(f => f.includes('🍏'));
+
+console.table(numFrutas2);
