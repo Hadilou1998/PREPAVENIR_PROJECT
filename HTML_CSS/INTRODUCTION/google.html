@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body {
+            padding: clamp(1rem, 1.6rem + 2vw, 5rem);
+        }
+
+        h1 {
+            font-size: clamp(1.6rem, 1.6rem + 2vw, 5rem);
+        }
+
+        .content {
+            position: relative;
+            border: solid #ff0000 0px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .box {
+            position: absolute;
+        }
+
+        .item1 {
+            border-top: solid 30px #ea4335;
+            border-right: solid 30px transparent;
+            border-bottom: solid 30px #34a853;
+            border-left: solid 30px #fbbc05;
+            width: 150px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
+
+        /*.item1::before {
+            content: "";
+            display: block;
+            border-top: solid 30px #ea4335;
+            border-right: solid 30px transparent;
+            border-bottom: solid 30px transparent;
+            border-left: solid 30px transparent;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(-90reg);            
+        }*/
+
+        .item2 {
+            border-top: solid 30px transparent;
+            border-right: solid 30px #4285f4;
+            border-bottom: solid 30px transparent;
+            border-left: solid 30px transparent;
+            width: 150px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+
+        .item3 {
+            background-color: #4285f4;
+            width: 70px;
+            height: 25px;
+            position: absolute;
+            right: 0;
+            top: 70px;
+            border-radius: 0 0 50% 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Page d'acceuil</h1>
+    <div class="content">
+        <div class="box item1"></div>
+        <div class="box item2"></div>
+        <div class="box item3"></div>
+    </div>
+</body>
+
+</html>

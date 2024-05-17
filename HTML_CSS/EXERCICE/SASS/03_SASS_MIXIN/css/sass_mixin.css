@@ -1,0 +1,46 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  background-color: #0000ff;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.btn--success {
+  background-color: #008000;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.btn--danger {
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.btn--warning {
+  background-color: #ffff00;
+  color: #000000;
+  font-size: 20px;
+}
+
+.btn--dark {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.btn--light {
+  background-color: #808080;
+  color: #000000;
+  font-size: 20px;
+}/*# sourceMappingURL=sass_mixin.css.map */

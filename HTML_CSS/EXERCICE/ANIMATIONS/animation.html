@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        section {
+            /*display: flex;*/
+            animation-name: item;
+            width: 75%;
+            border: solid 5px #000000;
+            position: relative;
+            height: 300px;
+        }
+
+        div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            background-color: crimson;
+            animation-name: disney2;
+            animation-fill-mode: none;
+            animation: disney 5s linear 2s infinite alternate;
+            animation-play-state: paused;
+            animation-timing-function: cubic-bezier(0.47, 0.85, 0.66, 0.18);
+        }
+
+        div:hover {
+            animation-play-state: running;
+        }
+
+        @keyframes disney {
+            from {
+                transform: translateY(0);            
+            }
+
+            to {
+                transform: translateY(-20rem);
+                border-radius: 50%;
+                background-color: blue;
+            }
+        }
+
+        @keyframes disney2 {
+            0% {
+                transform: translateY(0);
+            }
+            
+            50% {
+                transform: translateY(-20rem);
+                border-radius: 50%;
+                background-color: blue; 
+            }
+
+            100% {
+                transform: translateY(0);
+                background-color: crimson;
+            }
+        }
+
+        @keyframes disneyfinal {
+            from {
+                transform: translateY(-20rem);
+                border-radius: 50%;
+                background-color: blue;
+            }
+            
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        img {
+            width: 40%;
+            animation-name: aigle;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes aigle {
+            from {
+                margin-left: 50%;
+                width: 20%;
+            }
+
+            to {
+                width: 20%;
+                border-radius: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="img/zaur-ibrahimov-vpu5crc2Avc-unsplash.jpg" alt="aigle royal" srcset="">
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>  
+</body>
+</html>

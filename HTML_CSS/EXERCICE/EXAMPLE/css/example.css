@@ -1,0 +1,103 @@
+@import url(./reset.css);
+
+:root {
+    --item-1: #332971;
+    --item-2: #47306b;
+    --item-3: #633967;
+    --item-4: #8e4565;
+    --item-5: #ba5568;
+    --item-6: #da6868;
+    --item-7: #ef7c67;
+    --item-8: #f99464;
+    --item-9: #fdaa61;
+    --item-10: #febe59;
+    --item-11: #ffc94e;
+    --item-12: #ffd042;
+}
+
+body {
+    height: 100vh;
+    padding: 2rem;
+}
+
+.grid-content {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-1 {
+    background-color: var(--item-1);
+}
+
+.item-2 {
+    background-color: var(--item-2);
+}
+
+.item-3 {
+    background-color: var(--item-3);
+}
+
+.item-4 {
+    background-color: var(--item-4);
+}
+
+.item-5 {
+    background-color: var(--item-5);
+}
+
+.item-6 {
+    background-color: var(--item-6);
+}
+
+.item-7 {
+    background-color: var(--item-7);
+}
+
+.item-8 {
+    background-color: var(--item-8);
+}
+
+.item-9 {
+    background-color: var(--item-9);
+}
+
+.item-10 {
+    background-color: var(--item-10);
+}
+
+.item-11 {
+    background-color: var(--item-11);
+}
+
+.item-12 {
+    background-color: var(--item-12);
+}
+
+.grid-main {
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-auto-rows: 1fr 5fr 1fr;
+    grid-template-areas: "head head ." "side art menu" "foot foot menu";
+}
+
+body {
+    padding: 2%;
+    margin: 10px;
+    font: bold 40px "Courier New", Courier, Monospace;
+    white-space: inherit;
+}
+
+.header {
+    height: 100px;
+    background-color: #332971;
+}
+
+.navbar {
+    float: left;
+
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Position</title>
+    <style>
+        :root {
+            --item-1: #332971;
+            --item-2: #47306b;
+            --item-3: #633967;
+            --item-4: #8e4565;
+            --item-5: #ba5568;
+            --item-6: #da6868;
+            --item-7: #ef7c67;
+            --item-8: #f99464;
+            --item-9: #fdaa61;
+            --item-10: #febe59;
+            --item-11: #ffc94e;
+            --item-12: #ffd042;
+            --item-width: 50px;
+        }
+
+        body {
+            padding: 5rem;
+        }
+
+        .container {
+            background-color: #deb887;
+            height: 30rem;
+            position: relative;
+        }
+
+        span {
+            display: block;
+            background-color: #2f4f4f;
+            width: 20px;
+            height: 20px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .box {
+            display: inline-block;
+            width: var(--item-width);
+            aspect-ratio: 1/1;
+            /* hauteur identique à la largeur */
+            position: relative;
+        }
+
+        .box:not(:first-of-type) {
+            margin-left: 2rem;
+        }
+
+        .box1 {
+            background-color: var(--item-1);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .box2 {
+            background-color: var(--item-2);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .box3 {
+            background-color: var(--item-3);
+            position: fixed;
+            top: 0;
+        }
+
+        .box4 {
+            background-color: var(--item-4);
+        }
+
+        .box5 {
+            background-color: var(--item-5);
+        }
+
+        .box6 {
+            background-color: var(--item-6);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>https://sharemycode.fr/ua5</h1>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Labore autem fugiat rerum laboriosam, in eligendi mollitia nobis ut
+        sapiente maiores ab temporibus, beatae esse exercitationem commodi
+        natus explicabo aspernatur facere.
+    </p>
+
+    <div class="box box4">4</div>
+
+    <!-- div.box.box${$}*6 -->
+    <div class="container">
+        <div class="box box1"><span>1</span></div>
+        <div class="box box2"><span>2</span></div>
+        <div class="box box3"><span>3</span></div>
+        <div class="box box4"><span>4</span></div>
+        <div class="box box5"><span>5</span></div>
+        <div class="box box6"><span>6</span></div>
+    </div>
+</body>
+
+</html>

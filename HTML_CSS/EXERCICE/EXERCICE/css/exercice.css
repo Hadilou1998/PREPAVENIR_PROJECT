@@ -1,0 +1,85 @@
+@import url(./reset.css);
+
+:root {
+    --item-1: #332971;
+    --item-2: #47306b;
+    --item-3: #633967;
+    --item-4: #8e4565;
+    --item-5: #ba5568;
+    --item-6: #da6868;
+    --item-7: #ef7c67;
+    --item-8: #f99464;
+    --item-9: #fdaa61;
+    --item-10: #febe59;
+    --item-11: #ffc94e;
+    --item-12: #ffd042;
+}
+
+.grid-content {
+    display: grid;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.grid-auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.item-1 {
+    background-color: var(--item-1);
+}
+
+.item-2 {
+    background-color: var(--item-2);
+}
+
+.item-3 {
+    background-color: var(--item-3);
+}
+
+.item-4 {
+    background-color: var(--item-4);
+}
+
+.item-5 {
+    background-color: var(--item-5);
+}
+
+.item-6 {
+    background-color: var(--item-6);
+}
+
+.item-7 {
+    background-color: var(--item-7);
+}
+
+.item-8 {
+    background-color: var(--item-8);
+}
+
+.item-9 {
+    background-color: var(--item-9);
+}
+
+.item-10 {
+    background-color: var(--item-10);
+}
+
+.item-11 {
+    background-color: var(--item-11);
+}
+
+.item-12 {
+    background-color: var(--item-12);
+}

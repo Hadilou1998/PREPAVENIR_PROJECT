@@ -1,0 +1,11 @@
+@import url(./reset.css);
+
+:root {
+    --color_role-1: #f18b6d;
+    --color_role-2: #f1d204;
+    --color_role-3: #6a4d8a;
+    --color_facebook: #3b5998;
+    --color_twitter: #1da1f2;
+    --color_instagram: #e1306c;
+    --color_linkedin: #0077b5;
+}

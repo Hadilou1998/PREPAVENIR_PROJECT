@@ -1,0 +1,21 @@
+$nav-bgcolor: #0000ff;
+$li-bgcolor: #000000;
+$li-padding: 3px 6px;
+$a-color: #ffffff;
+
+nav {
+    background-color: $nav-bgcolor;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        li {
+            background-color: $li-bgcolor;
+            padding: $li-padding;
+            a {
+                color: $a-color;
+            }
+        }
+    }
+}

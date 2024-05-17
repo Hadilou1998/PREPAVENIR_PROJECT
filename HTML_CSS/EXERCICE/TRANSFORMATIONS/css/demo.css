@@ -1,0 +1,40 @@
+/*@import url(./reset.css);*/
+
+img {
+    width: 100px;
+    border-radius: 70%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.first:hover {
+    transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+}
+
+.second:hover {
+    transform: skew(20deg, 10deg);
+    -webkit-transform: skew(20deg, 10deg);
+    -moz-transform: skew(20deg, 10deg);
+    -ms-transform: skew(20deg, 10deg);
+    -o-transform: skew(20deg, 10deg);
+}
+
+.third:hover {
+    transform: translate(40px, 20px);
+    -webkit-transform: translate(40px, 20px);
+    -moz-transform: translate(40px, 20px);
+    -ms-transform: translate(40px, 20px);
+    -o-transform: translate(40px, 20px);
+}
+
+.fourth:hover {
+    transform: matrix(0.00, 1.00, -1.00, 0.00, 10, 5.00);
+    -webkit-transform: matrix(0.00, 1.00, -1.00, 0.00, 10, 5.00);
+    -moz-transform: matrix(0.00, 1.00, -1.00, 0.00, 10, 5.00);
+    -ms-transform: matrix(0.00, 1.00, -1.00, 0.00, 10, 5.00);
+    -o-transform: matrix(0.00, 1.00, -1.00, 0.00, 10, 5.00);
+}

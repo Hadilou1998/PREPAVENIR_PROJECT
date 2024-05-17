@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SASS_CARD</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/sass_card.css" />
+  </head>
+  <body>
+    <!-- Card de base -->
+    <div class="card">
+      <figure class="card__figure">
+        <img
+          src="https://source.unsplash.com/random/featured/?nature"
+          alt="nature"
+          class="card__image"
+        />
+      </figure>
+      <div class="card__body">
+        <h3 class="card__title">Titre carte</h3>
+        <p class="card__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, sed!
+        </p>
+      </div>
+      <div class="card__footer">
+        <button class="card__footer__button">En savoir plus</button>
+      </div>
+    </div>
+
+    <!-- Card large avec thème sombre -->
+    <div class="card card--large card--dark">
+      <figure class="card__figure">
+        <img
+          src="https://source.unsplash.com/random/featured/?design"
+          alt="design"
+          class="card__image card__image--rounded"
+        />
+      </figure>
+      <div class="card__body">
+        <h3 class="card__title card__title--small">Titre carte</h3>
+        <p class="card__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Consequuntur, in.
+        </p>
+      </div>
+      <div class="card__footer">
+        <button class="card__footer__button card__footer__button--disabled">
+          Indisponible
+        </button>
+      </div>
+    </div>
+
+    <!-- Autre exemple de card avec image arrondie et bouton désactivé -->
+    <div class="card card--rounded">
+      <figure class="card__figure">
+        <img
+          src="https://source.unsplash.com/random/featured/?music"
+          alt="music"
+          class="card__image card__image--rounded"
+        />
+      </figure>
+      <div class="card__body">
+        <h3 class="card__title">Titre carte</h3>
+        <p class="card__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+          maiores?
+        </p>
+      </div>
+      <div class="card__footer">
+        <button class="card__footer__button card__footer__button--disabled">
+          Indisponible
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

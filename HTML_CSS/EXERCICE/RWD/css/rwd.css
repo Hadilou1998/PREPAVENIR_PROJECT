@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    background-color: #00ffff;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #ff0000;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 600px;
+    float: left;
+    margin-top: 10px;
+}
+
+.item1 {
+    position: absolute;
+    display: flex;
+    background-color: #ff00ff;
+    justify-content: center;
+    align-items: center;
+    width: 30.25%;
+    height: 295px;
+    margin-left: 360px;
+    margin-top: 10px;
+}
+
+.item2 {
+    display: flex;
+    position: absolute;
+    background-color: #00008b;
+    justify-content: center;
+    align-items: center;
+    width: 30.25%;
+    height: 295px;
+    margin-left: 50%;
+    margin-top: 10px;
+}
+
+.item3 {
+    display: flex;
+    position: absolute;
+    background-color: #008000;
+    justify-content: center;
+    align-items: center;
+    width: 61.5%;
+    height: 295px;
+    margin-left: 360px;
+    margin-top: 315px;
+}
+
+.item4 {
+    display: flex;
+    position: absolute;
+    background-color: #ffd700;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 295px;
+    margin-left: 80.9%;
+    margin-top: 10px;
+}
+
+.item5 {
+    display: flex;
+    position: absolute;
+    background-color: #dc143c;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 295px;
+    margin-left: 80.9%;
+    margin-top: 315px;
+
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    background-color: #deb887;
+    justify-content: center;
+    align-items: center;
+    width: 99.1%;
+    height: 150px; 
+    margin-top: 620px;
+}

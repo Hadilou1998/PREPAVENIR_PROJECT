@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements</title>
+    <style>
+        .content {
+            background-color: aqua;
+            height: 30rem;
+            width: 30rem;
+            position: relative;
+        }
+
+        .content::before {
+            content: "🐘 ";
+            display: block;
+            width: 50%;
+            height: 50%;
+            background-color: burlywood;
+        }
+
+        .content::after {
+            content: "📘 ";
+            display: block;
+            width: 50%;
+            height: 50%;
+            background-color: burlywood;
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content"></div>
+</body>
+
+</html>
